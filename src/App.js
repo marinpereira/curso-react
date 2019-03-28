@@ -1,12 +1,18 @@
-import React, {Component} from 'react'
-import {StyleSheet, Text, View} from 'react-native'
+import React from 'react'
+import {StyleSheet, View} from 'react-native'
+
 import Simples from './componentes/Simples'
+import ParImpar from './componentes/ParImpar'
+import {Inverter, MegaSena} from './componentes/Multi'
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Simples texto='Flexível Amigão'/>
+        <Simples texto='É par ou impar ?'/>
+        <ParImpar numero={30}/>
+        <Inverter texto='React Nativo!'/>
+        <MegaSena numeros={9}/>
       </View>
     )
   }
