@@ -3,9 +3,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Text} from 'react-native'
+import Padrao from '../estilo/Padrao'
 
 const ValidarProps = props =>
-    <Text styles={{fontSize: 35}}>
+    <Text style={Padrao.fonte40}>
        {props.label}
        {props.ano + 2000}
     </Text>
