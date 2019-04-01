@@ -6,31 +6,37 @@ import ParImpar from './componentes/ParImpar'
 import {Inverter, MegaSena} from './componentes/Multi'
 import Contador from './componentes/Contador'
 import Plataformas from './componentes/Plataformas'
+import ValidarProps from './componentes/ValidarProps'
 
 export default createDrawerNavigator({
+
+    ValidarProps: {
+      screen: () => <ValidarProps ano={18}/>,
+      navigationOptions: { title: 'Validar Props'}
+    },
+
     Plataformas: {
         screen: Plataformas
     },
     Contador: {
-        screen: () => <Contador numeroInicial={100}/> 
+        screen: () => <Contador numeroInicial={100}/>
     },
-    MegaSena: 
+    MegaSena:
     {
         screen: () => <MegaSena numeros={8}/>,
         navigationOptions: { title: 'Mega Sena'}
     },
-    Inverter: 
+    Inverter:
     {
         screen: () => <Inverter texto='React-Nativo !!!'/>
     },
-    ParImpar: 
+    ParImpar:
     {
         screen: () => <ParImpar numero={30}/>,
         navigationOptions: { title: 'Par & Impar'}
     },
-    Simples: 
+    Simples:
     {
         screen: () => <Simples texto='Flexivel'/>
     }
 }, {drawerWidth:180})
-
