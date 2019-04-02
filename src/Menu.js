@@ -13,12 +13,10 @@ export default createDrawerNavigator({
     Evento: {
       screen: Evento
     },
-
     ValidarProps: {
       screen: () => <ValidarProps ano={18}/>,
       navigationOptions: { title: 'Validar Props'}
     },
-
     Plataformas: {
         screen: Plataformas
     },
